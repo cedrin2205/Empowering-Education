@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(255, 216, 216);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  border: 2px solid gray;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  background-color: #44b3fd;
+  z-index: 99;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+
+}
+
+.logo {
+  font-size: 1em;
+  font-style: italic;
+  user-select: none;
+  font-weight: bold;
+  
+
+}
+
+.folders {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 250px;
+}
+
+.grid-1 {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+  z-index: 0;
+  padding-top: 18px;
+ 
+  
+}
+
+.grid-2 {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+  z-index: 0;
+  top: 140px;
+  padding-top: 18px;
+}
+
+.folder {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.15s;
+  padding: 0;
+  margin: 0;
+}
+
+.folder:hover {
+  opacity: 0.6;
+}
+
+.folders p {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: small;
+  padding: 0;
+  margin: 0;
+  color: black;
+  border-radius: 3px;
+  width: 140px;
+  font-weight: bold;
+  
+
+}
+
+
+.folders p:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: absolute;
+  display: flex;
+  top: px;
+  left: 40px;
+}
+
+
+h3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: absolute;
+  display: flex;
+  top: -10px;
+  left: 10px;
+}
+
+.btn {
+  width: 90px;
+  height: 45px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+  
+
+}
+
+.left-sidebar  {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 180px;
+  padding-top: 90px;
+  background-color: #67c1fd;
+  border: 1px solid gray;
+  z-index: 1;
+}
+
+
+.modules {
+  padding-top: 100px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  
+}
+
+.profile-picture {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.left-sidebar p {
+  margin: 0;
+}
+
+.strand {
+  font-size: small;
+  font-style: italic;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+ 
+  
+  
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  position: absolute;
+  margin-top: -515px;
+  position: fixed;
+  width: 1500px;
+}
+.contain {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  padding-left: 100px;
+  top: 100px;
+
+}
+.gallery {
+  margin-bottom: 100px;
+  margin-left:400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.alb {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  margin-top: 200px;
+}
+.alb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+}
+.modal-content {
+  z-index: 1;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 30%;
+  max-height: 80%;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.panel{
+  height: 100vh;
+  width: 400px;
+  background-color:#2a52be;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  z-index:1;
+}
+.bar{
+  position: fixed;
+  margin-top:-495px;
+  height: 200px;
+  width: 1800px;
+  padding: 50px;
+  background-color: skyblue;
+}
+.delete-btn {
+  width: 20px;
+  height: 20px;
+}
+.download-btn img {
+  width: 20px; 
+  height: 20px; 
+  margin-left: 5px; 
+}
+.btn {
+width: 100%;
+height: 45px;
+background: #162938;
+border: none;
+outline: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 1em;
+color: white;
+font-weight: 500;
+
+
+}
+
+.profile-strand {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  
+}
+
+.profile-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  
+
+}
+
+.strand {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+
